@@ -6,13 +6,13 @@ document.addEventListener("keydown", function(event) {
     player.style = "display:none";
     player.volume = 1;
     document.body.appendChild(player);
-    player.src = "./usr/themes/Moricolor/urusai/urusai-1.ogg";
+    player.src = "https://cdn.jsdelivr.net/gh/dishuii/cdn/urusai/urusai-1.ogg";
     player.play();
     var i=1;
     player.addEventListener("ended",function(){
         if(i<3) {
     i++;
-    player.src = "./usr/themes/Moricolor/urusai/urusai-" + i + ".ogg";
+    player.src = "https://cdn.jsdelivr.net/gh/dishuii/cdn/urusai/urusai-" + i + ".ogg";
     player.play();
         }
         else{return false;}
